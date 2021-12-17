@@ -12,7 +12,7 @@ How to preview
 
 Configurable parameters
 -----------
-<img src="/../pics/pics/params.jpg" width="50%" height="50%">
+<img src="/../pics/pics/params.jpg" width="50%" height="50%"></img>
 * <b>Type</b>:
   * <b>Curvature</b> - highlights only the edges of objects.
   * <b>Cavity</b> - highlights the edges with the Ambient Occlusion effect.
