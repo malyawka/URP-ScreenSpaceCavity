@@ -2,7 +2,7 @@
 
 <b>Blender Cavity Effect for Unity</b>
 
-<img src="/../pics/pics/g-preview.gif"></img>
+<img src="/../pics/pics/g-preview.gif" width="960" height="640"></img>
 
 How to preview
 -----------
