@@ -16,7 +16,7 @@ Configurable parameters
 * <b>Type</b>:
   * <b>Curvature</b> - highlights only the edges of objects.
   * <b>Cavity</b> - highlights the edges with the Ambient Occlusion effect.
-  * <b>Both</b> - well, it's understandable 🤷‍♂️
+  * <b>Both</b> - well, it's understandable :man_shrugging:.
 * <b>Curvature</b>:
   * <b>Scale</b> - effect width.
   * <b>Ridge</b> - effect ntensivity for ridge (white).
@@ -61,5 +61,13 @@ Here is an example of parts of the code for the shader to work with Cavity::
 float2 normalizedUV = GetNormalizedScreenSpaceUV(input.positionCS);
 half cavity = SampleCavity(normalizedUV);
 
-<b>color</b> = cavity * 4.0;
+color *= cavity * 4.0;
 ```
+
+Notes:
+------
+* As an example, we use the free [POLYGON Starter Pack](https://assetstore.unity.com/packages/3d/props/polygon-starter-pack-low-poly-3d-art-by-synty-156819) asset from reputable [Synty Studios](https://assetstore.unity.com/publishers/5217).
+* If you are not familiar with the Universal Render Pipeline, you can find the [official tutorial here](https://learn.unity.com/tutorial/introduction-to-urp#).
+* [Writing Shaders](https://docs.unity3d.com/Manual/ShadersOverview.html).
+
+Good to everyone!:v:
