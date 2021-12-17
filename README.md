@@ -1,7 +1,5 @@
 # URP-ScreenSpaceCavity
 
-<b>Blender Cavity Effect for Unity</b>
-
 <img src="/../pics/pics/g-preview.gif" width="100%" height="100%"></img>
 
 How to preview
