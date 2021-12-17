@@ -30,7 +30,7 @@ Configurable parameters
 
 Shader setup
 -----------
-Here is an example of parts of the code for the shader to work with Cavity::
+Here is an example of parts of the code for the shader to work with Cavity:
 ```hlsl
 #if defined (_SCREEN_SPACE_CAVITY)
   #include "CavityInput.hlsl"
