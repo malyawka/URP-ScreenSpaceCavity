@@ -55,3 +55,11 @@ Here is an example of parts of the code for the shader to work with Cavity::
   }
 #endif
 ```
+
+<b>The main thing is to get the cavity value and use it to apply the color:</b>
+```hlsl
+float2 normalizedUV = GetNormalizedScreenSpaceUV(input.positionCS);
+half cavity = SampleCavity(normalizedUV);
+
+<b>color</b> = cavity * 4.0;
+```
