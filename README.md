@@ -4,8 +4,8 @@
 
 <img src="/../pics/pics/g-preview.gif" width="50%" height="50%">
 
-How to use:
+How to preview:
 -----------
 * Install [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/).
-* Download adn import the unity package, or clone this repository.
-* Open Demo scene from "Assets/PolygonStarter/Scenes/".
+* Download and import the [Unity package](https://github.com/malyawka/URP-ScreenSpaceCavity/releases/tag/Unity), or clone this repository.
+* Open scene from <b>[Assets/PolygonStarter/Scenes/Demo.unity]</b>.
