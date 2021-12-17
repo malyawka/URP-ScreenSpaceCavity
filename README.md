@@ -15,6 +15,7 @@ Configurable parameters:
 * <b>Type</b>:
   * <b>Curvature</b> - highlights only the edges of objects.
   * <b>Cavity</b> - highlights the edges with the Ambient Occlusion effect.
+  * <b>Both</b> - well, it's understandable 🤷‍♂️
 * <b>Curvature</b>:
   * <b>Scale</b> - effect width.
   * <b>Ridge</b> - effect ntensivity for ridge (white).
