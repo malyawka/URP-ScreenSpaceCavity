@@ -30,17 +30,17 @@ Configurable parameters
 
 Shader setup
 -----------
-All your custom shaders should include this:
-```
+Here is an example of parts of the code for the shader to work with Cavity::
+```hlsl
 #if defined (_SCREEN_SPACE_CAVITY)
   #include "CavityInput.hlsl"
 #endif
 ```
-```
+```hlsl
 #pragma multi_compile_fragment _ _SCREEN_SPACE_CAVITY
 #pragma multi_compile _ _CAVITY_DEBUG
 ```
-```
+```hlsl
 #if defined (_SCREEN_SPACE_CAVITY)
   if (_CavityEnabled)
   {
