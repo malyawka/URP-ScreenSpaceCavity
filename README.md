@@ -4,15 +4,15 @@
 
 <img src="/../pics/pics/g-preview.gif" width="50%" height="50%">
 
-How to preview:
+How to preview
 -----------
 * Install [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/).
 * Download and import the [Unity package](https://github.com/malyawka/URP-ScreenSpaceCavity/releases/tag/Unity), or clone this repository.
 * Open scene from <b>Assets/PolygonStarter/Scenes/Demo.unity</b>.
 
-Configurable parameters:
+Configurable parameters
 -----------
-<br> <img src="/../pics/pics/params.jpg" width="50%" height="50%">
+<img src="/../pics/pics/params.jpg" width="50%" height="50%">
 * <b>Type</b>:
   * <b>Curvature</b> - highlights only the edges of objects.
   * <b>Cavity</b> - highlights the edges with the Ambient Occlusion effect.
@@ -28,3 +28,30 @@ Configurable parameters:
   * <b>Valley</b> - effect ntensivity for valley (black).
   * <b>Samples</b> - number of passes to calculate the effect.
 
+Shader setup
+-----------
+All your custom shaders should include this:
+```
+#if defined (_SCREEN_SPACE_CAVITY)
+  #include "CavityInput.hlsl"
+#endif
+```
+```
+#pragma multi_compile_fragment _ _SCREEN_SPACE_CAVITY
+#pragma multi_compile _ _CAVITY_DEBUG
+```
+```
+#if defined (_SCREEN_SPACE_CAVITY)
+  if (_CavityEnabled)
+  {
+    float2 normalizedUV = GetNormalizedScreenSpaceUV(input.positionCS);
+    half cavity = SampleCavity(normalizedUV);
+    #ifdef _CAVITY_DEBUG
+      albedo.rgb = cavity * 2.0;
+    #else
+      bakedGI *= cavity * 4.0;
+      lightColor *= cavity * 4.0;
+    #endif
+  }
+#endif
+```
