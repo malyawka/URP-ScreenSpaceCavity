@@ -68,8 +68,6 @@ color *= cavity * 4.0;
 
 Attention! A custom shader must have passes for normals and depths.
 
-<span style="color:blue">some *blue* text</span>
-
 Notes
 ------
 * As an example, use the free [POLYGON Starter Pack](https://assetstore.unity.com/packages/3d/props/polygon-starter-pack-low-poly-3d-art-by-synty-156819) asset from reputable [Synty Studios](https://assetstore.unity.com/publishers/5217).
