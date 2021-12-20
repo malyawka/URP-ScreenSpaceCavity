@@ -8,7 +8,7 @@ How to preview
 * Download and import the [Unity package](https://github.com/malyawka/URP-ScreenSpaceCavity/releases/tag/Unity), or clone this repository.
 * Open scene from <b>Assets/PolygonStarter/Scenes/Demo.unity</b>.
 
-<b>Tested with:</b>
+<b>Tested with</b>
 Unity version - 2020.3
 URP version - 10.7
 
