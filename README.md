@@ -66,7 +66,7 @@ half cavity = SampleCavity(normalizedUV);
 color *= cavity * 4.0;
 ```
 
-<color=red><b>Attention! A custom shader must have passes for normals and depths.</b></color>
+<b>![#f03c15]Attention! A custom shader must have passes for normals and depths.</b>
 
 Notes
 ------
