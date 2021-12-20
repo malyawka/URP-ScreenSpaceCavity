@@ -5,7 +5,7 @@
 How to preview
 -----------
 * Install [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/).
-* Download and import the [Unity package](https://github.com/malyawka/URP-ScreenSpaceCavity/releases/tag/Unity), or clone this repository.
+* Download and import the [Unity package](https://github.com/malyawka/URP-ScreenSpaceCavity/releases/tag/Unity).
 * Open scene from <b>Assets/PolygonStarter/Scenes/Demo.unity</b>.
 
 <b>Tested with</b>
