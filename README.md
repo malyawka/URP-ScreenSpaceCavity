@@ -68,7 +68,7 @@ color *= cavity * 4.0;
 
 Attention! A custom shader must have passes for normals and depths.
 
-
+<span style="color:blue">some *blue* text</span>
 
 Notes
 ------
