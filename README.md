@@ -66,9 +66,10 @@ half cavity = SampleCavity(normalizedUV);
 color *= cavity * 4.0;
 ```
 
-Attention! A custom shader must have passes for normals and depths.
+A custom shader must have passes for normals and depths.
 
-# 2014, The year of [Blue](#)
+# Attention!
+The year of [Red](A custom shader must have passes for normals and depths.)
 
 Notes
 ------
